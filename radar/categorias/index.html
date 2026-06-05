@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore todas as categorias de produtos com as melhores ofertas do Radar de Preços.">
+    <title>Categorias | Radar de Preços</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">📡</span>
+                <h1>Radar de Preços</h1>
+            </div>
+            <nav class="nav">
+                <a href="/" class="nav-link">Início</a>
+                <a href="/radar/categorias/" class="nav-link active">Categorias</a>
+                <a href="/radar/noticias/" class="nav-link">Notícias</a>
+                <a href="/radar/sobre.html" class="nav-link">Sobre</a>
+            </nav>
+            <div class="live-badge">
+                <span class="pulse"></span> AO VIVO
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">Início</a> / <span>Categorias</span>
+        </div>
+    </div>
+
+    <!-- Categories Section -->
+    <section class="categories-full">
+        <div class="container">
+            <h1>Todas as Categorias</h1>
+            <p class="subtitle">Navegue por categoria e encontre as melhores ofertas</p>
+
+            <div class="categories-list">
+                <div class="category-item">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <span class="category-icon">📱</span>
+                        <span class="category-title">Eletrônicos</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <p>Smartphones, notebooks, tablets, fones e muito mais com os melhores preços.</p>
+                        <div class="subcategories">
+                            <a href="?cat=eletronicos&sub=smartphones">📱 Smartphones</a>
+                            <a href="?cat=eletronicos&sub=notebooks">💻 Notebooks</a>
+                            <a href="?cat=eletronicos&sub=tablets">📲 Tablets</a>
+                            <a href="?cat=eletronicos&sub=fones">🎧 Fones</a>
+                            <a href="?cat=eletronicos&sub=cameras">📷 Câmeras</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <span class="category-icon">👕</span>
+                        <span class="category-title">Moda</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <p>Roupas, calçados, acessórios e muito mais para você se sentir bem.</p>
+                        <div class="subcategories">
+                            <a href="?cat=moda&sub=roupas">👔 Roupas</a>
+                            <a href="?cat=moda&sub=calcados">👟 Calçados</a>
+                            <a href="?cat=moda&sub=acessorios">⌚ Acessórios</a>
+                            <a href="?cat=moda&sub=bolsas">👜 Bolsas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <span class="category-icon">🏠</span>
+                        <span class="category-title">Casa e Decoração</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <p>Móveis, decoração, utensílios e tudo para sua casa.</p>
+                        <div class="subcategories">
+                            <a href="?cat=casa&sub=moveis">🛋️ Móveis</a>
+                            <a href="?cat=casa&sub=decoracao">🖼️ Decoração</a>
+                            <a href="?cat=casa&sub=utensílios">🍽️ Utensílios</a>
+                            <a href="?cat=casa&sub=eletrodomesticos">🔌 Eletrodomésticos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <span class="category-icon">⚽</span>
+                        <span class="category-title">Esportes</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <p>Equipamentos esportivos, roupas de academia e muito mais.</p>
+                        <div class="subcategories">
+                            <a href="?cat=esportes&sub=equipamentos">🏋️ Equipamentos</a>
+                            <a href="?cat=esportes&sub=roupas">👕 Roupas Esportivas</a>
+                            <a href="?cat=esportes&sub=calcados">👟 Tênis Esportivos</a>
+                            <a href="?cat=esportes&sub=acessorios">🎒 Acessórios</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <span class="category-icon">💄</span>
+                        <span class="category-title">Beleza e Saúde</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <p>Cosméticos, produtos de cuidado pessoal e saúde.</p>
+                        <div class="subcategories">
+                            <a href="?cat=beleza&sub=cosmeticos">💅 Cosméticos</a>
+                            <a href="?cat=beleza&sub=skincare">🧴 Skincare</a>
+                            <a href="?cat=beleza&sub=perfumes">🌸 Perfumes</a>
+                            <a href="?cat=beleza&sub=saude">💊 Saúde</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <span class="category-icon">📚</span>
+                        <span class="category-title">Livros e Mídia</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <p>Livros, e-books, filmes e conteúdo digital.</p>
+                        <div class="subcategories">
+                            <a href="?cat=livros&sub=livros">📖 Livros</a>
+                            <a href="?cat=livros&sub=ebooks">📱 E-books</a>
+                            <a href="?cat=livros&sub=filmes">🎬 Filmes</a>
+                            <a href="?cat=livros&sub=jogos">🎮 Jogos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <span class="category-icon">🍔</span>
+                        <span class="category-title">Alimentos e Bebidas</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <p>Alimentos, bebidas e produtos gourmet.</p>
+                        <div class="subcategories">
+                            <a href="?cat=alimentos&sub=alimentos">🥗 Alimentos</a>
+                            <a href="?cat=alimentos&sub=bebidas">🥤 Bebidas</a>
+                            <a href="?cat=alimentos&sub=gourmet">🍷 Gourmet</a>
+                            <a href="?cat=alimentos&sub=organicos">🌱 Orgânicos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <span class="category-icon">🐾</span>
+                        <span class="category-title">Pets</span>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <div class="category-content">
+                        <p>Produtos para cães, gatos e outros animais de estimação.</p>
+                        <div class="subcategories">
+                            <a href="?cat=pets&sub=caes">🐕 Cães</a>
+                            <a href="?cat=pets&sub=gatos">🐱 Gatos</a>
+                            <a href="?cat=pets&sub=alimentos">🍖 Alimentos</a>
+                            <a href="?cat=pets&sub=acessorios">🎾 Acessórios</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>📡 Radar de Preços</h4>
+                    <p>Sua ferramenta definitiva para encontrar o menor preço.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="/radar/sobre.html">Sobre Nós</a></li>
+                        <li><a href="/radar/privacidade.html">Privacidade</a></li>
+                        <li><a href="/radar/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Radar de Preços. Transparência e Tecnologia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleCategory(element) {
+            const content = element.nextElementSibling;
+            const icon = element.querySelector('.toggle-icon');
+            content.classList.toggle('open');
+            icon.style.transform = content.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0)';
+        }
+    </script>
+</body>
+</html>

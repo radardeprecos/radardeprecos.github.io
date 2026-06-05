@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Radar de Preços - O menor preço garantido. Monitore milhares de produtos para encontrar a melhor oferta.">
+    <meta name="keywords" content="ofertas, preços, comparação, descontos, compras online">
+    <title>Radar de Preços | Melhores Ofertas do Dia — Menor Preço Garantido</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>📡</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">📡</span>
+                <h1>Radar de Preços</h1>
+            </div>
+            <nav class="nav">
+                <a href="/" class="nav-link active">Início</a>
+                <a href="/radar/categorias/" class="nav-link">Categorias</a>
+                <a href="/radar/noticias/" class="nav-link">Notícias</a>
+                <a href="/radar/sobre.html" class="nav-link">Sobre</a>
+            </nav>
+            <div class="live-badge">
+                <span class="pulse"></span> AO VIVO
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>O Menor Preço, no Radar. 🎯</h2>
+            <p>Monitoramos milhares de produtos para você encontrar a oferta real, sem pegadinhas.</p>
+            <button class="cta-button" onclick="document.getElementById('offers').scrollIntoView({behavior: 'smooth'})">
+                🛒 VER OFERTAS DE HOJE
+            </button>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="offers-section">
+        <div class="container">
+            <h2>Ofertas em Destaque</h2>
+            <p class="subtitle">Atualizado agora</p>
+            
+            <div class="offers-grid" id="offersGrid">
+                <!-- Ofertas serão carregadas aqui via JavaScript -->
+                <div class="offer-card loading">
+                    <div class="offer-badge">OFERTA NINJA</div>
+                    <div class="offer-image"></div>
+                    <div class="offer-title">Carregando ofertas...</div>
+                    <div class="offer-price">---</div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <a href="/radar/categorias/" class="button-link">Ver Todas as Categorias →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <h2>📰 Notícias de Ofertas</h2>
+            <p class="subtitle">Fique por dentro das melhores promoções</p>
+            
+            <div class="news-grid" id="newsGrid">
+                <!-- Notícias serão carregadas aqui -->
+                <div class="news-card loading">
+                    <div class="news-date">Carregando...</div>
+                    <div class="news-title">Notícias em tempo real</div>
+                    <div class="news-excerpt">Aguarde...</div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <a href="/radar/noticias/" class="button-link">Ver Todas as Notícias →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Preview -->
+    <section class="categories-preview">
+        <div class="container">
+            <h2>Navegue por Categoria</h2>
+            <div class="categories-grid">
+                <a href="/radar/categorias/?cat=eletronicos" class="category-card">
+                    <span class="category-icon">📱</span>
+                    <span class="category-name">Eletrônicos</span>
+                </a>
+                <a href="/radar/categorias/?cat=moda" class="category-card">
+                    <span class="category-icon">👕</span>
+                    <span class="category-name">Moda</span>
+                </a>
+                <a href="/radar/categorias/?cat=casa" class="category-card">
+                    <span class="category-icon">🏠</span>
+                    <span class="category-name">Casa</span>
+                </a>
+                <a href="/radar/categorias/?cat=esportes" class="category-card">
+                    <span class="category-icon">⚽</span>
+                    <span class="category-name">Esportes</span>
+                </a>
+                <a href="/radar/categorias/?cat=beleza" class="category-card">
+                    <span class="category-icon">💄</span>
+                    <span class="category-name">Beleza</span>
+                </a>
+                <a href="/radar/categorias/?cat=livros" class="category-card">
+                    <span class="category-icon">📚</span>
+                    <span class="category-name">Livros</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>📡 Radar de Preços</h4>
+                    <p>Sua ferramenta definitiva para encontrar o menor preço e economizar de verdade todos os dias.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="/radar/sobre.html">Sobre Nós</a></li>
+                        <li><a href="/radar/privacidade.html">Privacidade</a></li>
+                        <li><a href="/radar/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="/radar/categorias/?cat=eletronicos">Eletrônicos</a></li>
+                        <li><a href="/radar/categorias/?cat=moda">Moda</a></li>
+                        <li><a href="/radar/categorias/?cat=casa">Casa</a></li>
+                        <li><a href="/radar/categorias/?cat=beleza">Beleza</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Radar de Preços. Transparência e Tecnologia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
