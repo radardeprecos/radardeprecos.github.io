@@ -1,0 +1,21 @@
+/* BLINDAGEM RADAR DE PREÇOS */
+:root { --p:#6366f1; --s:#06b6d4; --d:#0f172a; --w:#ffffff; --g:#f8fafc; --success:#10b981; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, system-ui, sans-serif; background: var(--g); color: var(--d); line-height: 1.6; }
+/* Ajuste de Imagens que estão gigantes */
+img { max-width: 100%; height: auto; border-radius: 8px; margin: 0 auto; display: block; max-height: 200px; object-fit: contain; }
+/* Grid de Ofertas */
+.product-grid, section, main { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto; }
+/* Cards Profissionais */
+.product-card, div[class*="item"], article { background: var(--w); border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0; transition: 0.3s; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-color: var(--p); }
+/* Preços e Botões */
+h3 { font-size: 16px; margin: 15px 0; color: var(--d); height: 50px; overflow: hidden; }
+.current-price, strong { font-size: 24px; color: var(--d); font-weight: 800; display: block; }
+.old-price, strike { color: #94a3b8; text-decoration: line-through; font-size: 14px; }
+/* Botão de Compra Estilo Ninja */
+a[href*="mercadolivre"], a[href*="amazon"], .btn-buy { background: linear-gradient(135deg, #22c55e, #16a34a); color: white !important; font-weight: bold; padding: 14px; border-radius: 10px; text-align: center; text-decoration: none !important; margin-top: 15px; display: block; transition: 0.3s; }
+a:hover { filter: brightness(1.1); }
+/* Header e Navegação */
+header { background: var(--d); padding: 20px; color: white; text-align: center; }
+nav a { color: #cbd5e1; margin: 0 10px; text-decoration: none; font-size: 14px; }
